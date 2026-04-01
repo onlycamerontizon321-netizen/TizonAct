@@ -16,24 +16,25 @@
 
 body {
     min-height: 100vh;
-    .about,
-    .achievements {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .about:hover,
-    .achievements:hover {
-        transform: translateY(-4px);
-        box-shadow: 0 14px 28px rgba(8, 8, 8, 0.3);
-    }
     color: var(--suisei-accent);
     background:
         linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)),
-        url("suibg.png") center/cover no-repeat;
+        url("suibg.jpg") center/cover no-repeat;
+}
+
+.about,
+.achievements {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about:hover,
+.achievements:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(8, 8, 8, 0.3);
 }
 
 .page-container {
-    width: min(920px, 100%);
+    width: min(2000px, 100%);
     margin: 0 auto;
     display: grid;
     gap: 12px;
